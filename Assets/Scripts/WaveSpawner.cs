@@ -22,7 +22,7 @@ public class WaveSpawner : MonoBehaviour {
 	void Update ()
     {
 		
-        if(countdown <= 0F)
+        if(countdown <= 2F)
         {
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
@@ -36,7 +36,8 @@ public class WaveSpawner : MonoBehaviour {
 
     IEnumerator SpawnWave()
     {
-        
+        waveIndex++;
+        PlayerStats.Rounds++;
 
         for (int i = 0; i < waveIndex; i++)
         {   
