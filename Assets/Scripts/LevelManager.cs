@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour {
         if (gameEnded)
             return;
 
-		if(PlayerStats.Lives <= 0)
+		if(PlayerStats.Hp <= 0)
         {
             EndGame();
         }
