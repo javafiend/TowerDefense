@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114452348407410696}
   - component: {fileID: 114353514258883150}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy_Fast
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1005122085857564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.51, y: 1.47, z: 7.59}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 82096aab38f01cb40a1cbf8629a810ba, type: 2}
+  - {fileID: 2100000, guid: 1032d41f900276c40a9dd24f55b7d420, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,11 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712bda959d5588446b0ede011f31dc90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 20
   speed: 10
-  health: 100
-  worth: 50
-  deathEffect: {fileID: 1382565627972358, guid: 80f7b1ce59e83c2469c9143f3bf5451c,
+  health: 50
+  worth: 25
+  deathEffect: {fileID: 1382565627972358, guid: 24716933b584bfe4f9edbef61fb479ce,
     type: 2}
 --- !u!135 &135599008630943260
 SphereCollider:
