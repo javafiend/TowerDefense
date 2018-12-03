@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class CompleteLevel : MonoBehaviour {
 
+    public string levelToLoad = "MainMenu";
 
     public void Continue()
     {
@@ -13,6 +15,6 @@ public class CompleteLevel : MonoBehaviour {
 
     public void Menu()
     {
-        Debug.Log("Go to Menu");
+        SceneManager.LoadScene(levelToLoad);
     }
 }

@@ -30,7 +30,7 @@ public class WaveSpawner : MonoBehaviour {
             return;
         }
 
-        if (waveIndex == waves.Length)
+        if (waveIndex == waves.Length && PlayerStats.Hp != 0)
         {
             levelManager.WinLevel();
             this.enabled = false;

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour {
 
+    public string levelToLoad = "MainMenu";
 
     public void Retry()
     {
@@ -14,6 +15,6 @@ public class GameOver : MonoBehaviour {
 
     public void Menu()
     {
-        Debug.Log("Go to Menu");
+        SceneManager.LoadScene(levelToLoad);
     }
 }

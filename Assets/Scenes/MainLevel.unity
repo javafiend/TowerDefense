@@ -1429,6 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 149191682}
   - component: {fileID: 149191685}
+  - component: {fileID: 149191683}
   m_Layer: 5
   m_Name: CompleteLevel
   m_TagString: Untagged
@@ -1459,6 +1460,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &149191683
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149191681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &149191685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8447,9 +8466,9 @@ MonoBehaviour:
     count: 10
     rate: 3
   spawnPoint: {fileID: 4809158265689836, guid: bdff9472bd740ad409b58b9960af70fa, type: 2}
-  timeBetweenWaves: 2
+  timeBetweenWaves: 5
   waveCountdownText: {fileID: 528397858}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 1007085350}
 --- !u!4 &1007085347
 Transform:
   m_ObjectHideFlags: 0
@@ -8489,7 +8508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c9f7d0cbd61534439421adee90360db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 5000
+  startMoney: 150
   startHp: 10
 --- !u!114 &1007085350
 MonoBehaviour:
