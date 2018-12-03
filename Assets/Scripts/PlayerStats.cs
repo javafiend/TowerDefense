@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerStats : MonoBehaviour {
 
     public static int Money;
-    public int startMoney = 400;
+    public int startMoney = 250;
 
     public static int Hp;
     public int startHp = 100;

@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour {
     private Transform target;
 
     public float speed = 70f;
-    public int damage = 50;
+    public int damage = 30;
 
     public float explosionRadius = 0f;
 
